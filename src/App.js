@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import ContactInfo from './components/ContactInfo';
+import DateOfBirth from './components/DateOfBirth';
+import Name from './components/Name';
+import { useState } from 'react';
 
-function App() {
+function App(props) {
+ const [newinfo, setNewInfo] = useState({})
+  function allInfo(info) {
+    setNewInfo(info)
+  }
+  console.log(newinfo)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React now pepe leon 
-        </a>
-      </header>
+      <div className='central'>
+        <Name allInfo={allInfo}/>
+        <DateOfBirth allInfo={allInfo}/>
+        <ContactInfo allInfo={allInfo}/>
+        <div>{newinfo.name} {newinfo.day}
+        </div>
+      </div>
+      
+
     </div>
   );
 }
