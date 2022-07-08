@@ -13,15 +13,15 @@ const ContactInfo = (props) => {
     <div className='central'>
     
       <div className='grayito2'>
-        <h1>Contact's Info</h1>
+        <h1>Datos de contacto</h1>
         
             <div>
-              <input placeholder='email' value={email}
+              <input placeholder='Correo electrónico' value={email}
                 onChange = {(event)=> setEmail(event.target.value)}/>
             </div>
         
             <div>
-              <input placeholder='cellphone' value={cellphone}
+              <input placeholder='Teléfono celular' value={cellphone}
                 onChange = {(event)=> setCellPhone(event.target.value)}/>
             </div>
         

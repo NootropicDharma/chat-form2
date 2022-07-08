@@ -13,26 +13,26 @@ const Name = (props) => {
   return (
     <div className='central'>
             <div className='grayito'>
-                <h1>What's your name?</h1>
+                <h1>Cuál es tu nombre?</h1>
                         
                 <div>
-                    <input  placeholder='name' value={name}
+                    <input  placeholder='Nombre' value={name}
                          onChange = {(event)=> setName(event.target.value)}/>
                     
                 </div>
                         
                 <div>
-                    <input  placeholder='Second Name' value={secondName}
+                    <input  placeholder='Segundo nombre' value={secondName}
                         onChange = {(event)=> setSecondName(event.target.value)}/>
                 </div>
                        
                 <div>
-                    <input  placeholder='Last Name' value={lastName}
+                    <input  placeholder='Apellido paterno' value={lastName}
                         onChange = {(event)=> setLastName(event.target.value)}/>
                 </div>
                         
                 <div>
-                    <input  placeholder='Maidens Name' value={maidenName}
+                    <input  placeholder='Apellido materno' value={maidenName}
                         onChange = {(event)=> setMaidenName(event.target.value)}/>
                 </div>
                         

@@ -12,22 +12,22 @@ const DateOfBirth = (props) => {
   return (
     <div className='central'>
       <div className='grayito3'>
-        <h1>what's your Date of birth?</h1>
+        <h1>Cuál es tu fecha de nacimiento?</h1>
            
           <div>
-            <input  placeholder='Day' value={day}
+            <input  placeholder='Dia' value={day}
             onChange = {(event)=> setDay(event.target.value)}/>
             
           </div>
            
           <div>
-            <input placeholder='Month' value={month}
+            <input placeholder='Mes' value={month}
             onChange = {(event)=> setMonth(event.target.value)}/>
           </div>
           
            
           <div>
-            <input placeholder='Year' value={year}
+            <input placeholder='Año' value={year}
             onChange = {(event)=> setYear(event.target.value)}/>
           </div>
            
