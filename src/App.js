@@ -62,19 +62,22 @@ function App(props) {
           {newinfo.name && newinfo.lastName && newinfo.maidenName? <DateOfBirth allInfo2={allInfo2}/> : <></>}
           {newinfo2.day && newinfo2.month && newinfo2.year? <ContactInfo allInfo3={allInfo3}/> : <></>}
           {newinfo3.cellphone && newinfo3.email? datosNuevos : <></>}
-          {newinfo.name && newinfo.lastName? <button type='submit' onClick={(e)=> setDatos(true)}>Iniciar</button> : <></>}
+          {newinfo3.cellphone && newinfo3.email && datosNuevos? <button type='submit' onClick={(e)=> setDatos(true)}>Iniciar</button> : <></>}
         
         
               {datos&&
                 <div  className="toda">
                   <div>
-                    {newinfo.name} {newinfo.lastName} {newinfo.maidenName}
+                     Fecha de Nacimiento: {newinfo2.day} {newinfo2.month} {newinfo2.year}
                   </div>
                   <div>
-                     {newinfo2.day} {newinfo2.month} {newinfo2.year}
+                    Correo electrónico: {newinfo3.email}
                   </div>
                   <div>
-                    {newinfo3.cellphone} {newinfo3.email}
+                    Teléfono celular: {newinfo3.cellphone} 
+                  </div>
+                  <div>
+                    Nombre: {newinfo.name} {newinfo.lastName} {newinfo.maidenName}
                   </div>
               
                 </div>
