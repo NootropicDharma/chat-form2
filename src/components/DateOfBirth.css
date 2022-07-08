@@ -1,14 +1,15 @@
 .grayito3 {
-    background-color: rgb(230, 225, 225);
+    background-color: rgb(211, 206, 206);
     border-radius: 10px;
     width: 50%;
-    width: 200px;
+    width: 250px;
     height: 220px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .info2 {
     background-color: hotpink;
-    width: 100%;
+    width: 60%;
     border-radius: 5px;
 }
+

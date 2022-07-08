@@ -6,7 +6,7 @@ const ContactInfo = (props) => {
     
     const [email, setEmail] = useState("")
     const [cellphone, setCellPhone] = useState("")
-    const { allInfo } = props
+    const { allInfo3 } = props
 
   return (
     
@@ -14,15 +14,18 @@ const ContactInfo = (props) => {
     
       <div className='grayito2'>
         <h1>Contact's Info</h1>
-        <form>
-            <input placeholder='email' value={email}
-              onChange = {(event)=> setEmail(event.target.value)}/>
-        </form>
-        <form>
-            <input placeholder='cellphone' value={cellphone}
-              onChange = {(event)=> setCellPhone(event.target.value)}/>
-        </form>
-          <button onClick={()=> allInfo()}></button>
+        
+            <div>
+              <input placeholder='email' value={email}
+                onChange = {(event)=> setEmail(event.target.value)}/>
+            </div>
+        
+            <div>
+              <input placeholder='cellphone' value={cellphone}
+                onChange = {(event)=> setCellPhone(event.target.value)}/>
+            </div>
+        
+          <button onClick={()=> allInfo3({email,cellphone})}>Enviar</button>
       </div>
 
     <div className='info3'>{email} {cellphone}</div>
