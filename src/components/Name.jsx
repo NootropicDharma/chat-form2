@@ -36,7 +36,7 @@ const Name = (props) => {
                         onChange = {(event)=> setMaidenName(event.target.value)}/>
                 </div>
                         
-                  <button onClick={() => allInfo({name,secondName,lastName,maidenName})}>Enviar</button>
+                  <button className='button1' onClick={() => allInfo({name,secondName,lastName,maidenName})}>Enviar</button>
             </div>
 
             <div className='info'>{name} {secondName} {lastName} {maidenName}</div>

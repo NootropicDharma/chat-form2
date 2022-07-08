@@ -25,7 +25,7 @@ const ContactInfo = (props) => {
                 onChange = {(event)=> setCellPhone(event.target.value)}/>
             </div>
         
-          <button onClick={()=> allInfo3({email,cellphone})}>Enviar</button>
+          <button className='button3' onClick={()=> allInfo3({email,cellphone})}>Enviar</button>
       </div>
 
     <div className='info3'>{email} {cellphone}</div>

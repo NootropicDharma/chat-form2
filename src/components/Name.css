@@ -38,9 +38,9 @@ input::placeholder {
     transition: color 0.3s ease;
 }
 
-button {
+.button1 {
     margin-top: 15px;
-    background-color: #e21b0d; /* Green */
+    background-color: #099bc3;
     border: none;
     color:white;
     padding: 5px 15px;

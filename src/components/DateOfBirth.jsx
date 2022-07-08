@@ -31,7 +31,7 @@ const DateOfBirth = (props) => {
             onChange = {(event)=> setYear(event.target.value)}/>
           </div>
            
-          <button onClick={()=> allInfo2({day,month,year})}>Enviar</button>
+          <button className='button2' onClick={()=> allInfo2({day,month,year})}>Enviar</button>
       </div>
       <div className='info2'>{day} {month} {year}</div>
 
